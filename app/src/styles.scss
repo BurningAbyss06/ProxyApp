@@ -1,1 +1,14 @@
-/* You can add global styles to this file, and also import other style files */
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+:root{
+    //COLORES BASES
+    --rosa: #FF335C;
+    --azul: #2B55FF;
+    --violeta: #950097;
+    --naranja: #FF8003;
+    --blanco: #FFFFFF;
+    --negroMate: #1B2021;
+    --negro: #070909;
+    //COLORES ALTERNATIVOS
+    --alt_rosa: #ff145b80;
+}
