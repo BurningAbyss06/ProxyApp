@@ -9,14 +9,16 @@
         <section class="col col-dos">
             <div class="container-fluid box">
                 <h1>Iniciar Sesion</h1>
-                <form #login="ngForm" (ngSubmit)="datosLogin(login)" novalidate class="login">
+                <form #login="ngForm" (ngSubmit)="datosLogin(login)" class="login">
                     <div class="input-group">
-                        <input id="username" required type="text" name="username" ngModel class="input">
+                        <input type="text" name="username" ngModel class="input">
                         <label class="user-label">Nombre de Usuario</label>
+                        <small id="error-username"> * Nombre de Usuario requerido</small>
                     </div>
                     <div class="input-group">
-                        <input id="password" required type="password" name="password" ngModel class="input" ngModel>
+                        <input type="password" name="password" ngModel class="input">
                         <label class="user-label">Contraseña</label>
+                        <small id="error-password"> * Contraseña requerida</small>
                     </div>
                     <button class="btn-contenedor">
                         <div class="btn-content">

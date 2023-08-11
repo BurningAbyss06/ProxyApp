@@ -74,11 +74,12 @@ h1{
 .login{
   .input-group {
     position: relative;
+    margin-bottom: 10px;
+    width: 40vh;
   }
   .input {
     width: 100%;
     height: 8vh;
-    margin-bottom: 10px;
     border: solid 3px var(--rosa);
     border-radius: 17px;
     background: none;
@@ -108,6 +109,14 @@ h1{
     padding: 0 .2em;
     color: var(--rosa);
   } 
+  small{
+    color: red;
+    font-family: 'Clash Display', sans-serif;
+    font-weight: 600;
+    font-size: 0.6em;
+    visibility: hidden;
+  }
+
   .btn-contenedor{
     display: flex;
     justify-content: center;
