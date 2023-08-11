@@ -9,17 +9,17 @@
         <section class="col col-dos">
             <div class="container-fluid box">
                 <h1>Iniciar Sesion</h1>
-                <form class="login">
+                <form #login="ngForm" (ngSubmit)="datosLogin(login)" novalidate class="login">
                     <div class="input-group">
-                        <input required="" type="text" name="text" autocomplete="off" class="input">
+                        <input id="username" required type="text" name="username" ngModel class="input">
                         <label class="user-label">Nombre de Usuario</label>
                     </div>
                     <div class="input-group">
-                        <input required="" type="text" name="text" autocomplete="off" class="input">
+                        <input id="password" required type="password" name="password" ngModel class="input" ngModel>
                         <label class="user-label">Contraseña</label>
                     </div>
-                    <div class="btn-contenedor">
-                        <a class="btn-content" href="#">
+                    <button class="btn-contenedor">
+                        <div class="btn-content">
                           <span class="btn-title">ENTRAR</span>
                           <span class="icon-arrow">
                             <svg width="46px" height="43px" viewBox="0 0 66 43" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -30,8 +30,8 @@
                               </g>
                             </svg>
                           </span> 
-                        </a>
-                    </div>
+                        </div>
+                    </button>
                 </form>
             </div>
         </section>
