@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { JugadorModel } from 'src/app/models/JugadorModel';
+import { NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-login',
@@ -7,4 +9,10 @@ import { Component } from '@angular/core';
 })
 export class LoginComponent {
 
+  public datosLogin(datos: NgForm){
+    let jugador!: JugadorModel;
+    jugador.username = datos.value['username'];
+    jugador.password = datos.value['password'];
+    
+  }
 }
