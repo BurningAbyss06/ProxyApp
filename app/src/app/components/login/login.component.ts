@@ -15,24 +15,20 @@ export class LoginComponent {
     let  jugador = new JugadorModel();
 
     jugador.username = datos.value['username'];
-    console.log(jugador.username);
     jugador.password = datos.value['password'];
-    console.log(jugador.password);
     let errorDatos = this.validarDatos(jugador);
-    console.log(errorDatos);
   }
 
   public validarDatos(jugador: JugadorModel): boolean{
     let errorUsername = document.getElementById('error-username');
     let errorPassword = document.getElementById('error-password');
 
-    if (!(jugador.username))  {      
-      $(errorUsername).css("visibility", "visible");
-      return true;
-    }
-    else if (!(jugador.password))  {      
-      $(errorPassword).css("visibility", "visible");
-      return true;
+    if (((!(jugador.username))) || ((!(jugador.password)))) {
+      if (!(jugador.username)) $(errorUsername).css("visibility", "visible");
+      else $(errorUsername).css("visibility", "hidden");
+      if (!(jugador.password)) $(errorPassword).css("visibility", "visible");
+      else $(errorPassword).css("visibility", "hidden");
+      return true;  
     }
     else {
       $(errorUsername).css("visibility", "hidden");
