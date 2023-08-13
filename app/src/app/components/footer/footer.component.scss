@@ -1,0 +1,132 @@
+footer{
+    width: 100%;
+    min-width: fit-content;
+    height: fit-content;
+    padding: 10px;
+    background-color: var(--negroMate);
+}
+.row{
+    margin: 0;
+}
+.col, .col-5{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.logos{
+    width: fit-content;
+    margin-bottom: 20px;
+ 
+    #logo{
+        margin-right: 15px;
+        margin-bottom: 15px;
+        
+    }
+}
+.botones{
+    width: fit-content;
+    button {
+        display: flex;
+        justify-content: center;
+        width: 220px;
+        margin: 0 20px 20px 0;
+        background: transparent;
+        position: relative;
+        padding: 5px 15px;
+        display: flex;
+        align-items: center;
+        font-size: 17px;
+        font-weight: 600;
+        text-decoration: none;
+        cursor: pointer;
+        border-radius: 35px;
+        outline: none;
+        overflow: hidden;
+        transition: color 0.3s 0.1s ease-out;
+        text-align: center;
+    }
+    button a {
+        margin: 10px;
+        text-decoration: none;
+    }
+    button::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        content: '';
+        border-radius: 50%;
+        display: block;
+        width: 20em;
+        height: 20em;
+        left: -5em;
+        text-align: center;
+        transition: box-shadow 0.5s ease-out;
+        z-index: -1;
+    }
+    button:hover {
+        color: #fff;
+        transition: box-shadow 0.5s ease-out;
+    }
+    #yt{
+        border: 1px solid rgb(255, 0, 0); 
+        color: rgb(255, 0, 0);
+    }
+    #yt a, #ig a{
+        color: white;
+        font-family: 'Clash Display', sans-serif;
+        font-weight: 500;
+        font-size: 1.4em;
+    }
+    #yt:hover{
+        border: 1px solid rgb(255, 0, 0); 
+        color: white;
+        box-shadow: inset 0 0 0 10em rgb(255, 0, 0);
+    }
+    #ig{
+        border: 1px solid rgb(193, 53, 132); 
+        color: rgb(193, 53, 132);
+    }
+    #ig:hover{
+        color: white;
+        border: 1px solid rgb(193, 53, 132); 
+        box-shadow: inset 0 0 0 10em rgb(193, 53, 132);
+    }
+       
+}
+
+@media (max-width: 1000px){
+    .contenedor-logos{
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+
+        #logo{
+            margin-bottom: 20px;
+        }
+    }
+    .row{
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .botones{
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 1140px){
+    .contenedor-logos{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
