@@ -1,7 +1,6 @@
 @import 'animate.css';
 
-.fondo{
-    background-color: var(--azulOscuro);
+.navbar{
     width: 100%;
     min-width: fit-content;
     height: 100%;
@@ -37,7 +36,7 @@
 }
 
 @media (max-width: 700px){
-    .fondo{
+    .navbar{
         background-color: var(--azulOscuro);
         width: 100%;
         min-width: fit-content;

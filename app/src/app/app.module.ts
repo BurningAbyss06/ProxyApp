@@ -2,23 +2,21 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
 import { LoginModule } from './modules/login/login.module';
-
+import { HistorialModule } from './modules/historial/historial.module';
 import { AppRoutingModule } from './app-routing.module';
+
 import { AppComponent } from './app.component';
-import { NavbarComponent } from './components/navbar/navbar.component';
-import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavbarComponent,
-    FooterComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule, 
     HttpClientModule, 
-    LoginModule
+    LoginModule, 
+    HistorialModule
   ],
   providers: [],
   bootstrap: [AppComponent]

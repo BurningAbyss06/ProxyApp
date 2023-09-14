@@ -16,11 +16,11 @@ footer{
 }
 .logos{
     width: fit-content;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
  
     #logo{
         margin-right: 15px;
-        margin-bottom: 15px;
+        // margin-bottom: 15px;
         
     }
 }
@@ -29,14 +29,14 @@ footer{
     button {
         display: flex;
         justify-content: center;
-        width: 220px;
+        width: 170px;
         margin: 0 20px 20px 0;
         background: transparent;
         position: relative;
         padding: 5px 15px;
         display: flex;
         align-items: center;
-        font-size: 17px;
+        font-size: 10px;
         font-weight: 600;
         text-decoration: none;
         cursor: pointer;
