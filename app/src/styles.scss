@@ -1,4 +1,8 @@
 @import "../node_modules/bootstrap/scss/bootstrap";
+@font-face {
+    font-family: 'Acetone';
+    src: url('./assets/Fonts/ACETONE.ttf') format('truetype');
+}
 
 :root{
     //COLORES BASES
@@ -11,5 +15,7 @@
     --negro: #070909;
     //COLORES ALTERNATIVOS
     --alt_rosa: #ff145b80;
+    --alt_negroMate: #1E1E1E;
     --azulOscuro: #000e44;
-}
+    --gris: #bdbdbd71;
+}   
