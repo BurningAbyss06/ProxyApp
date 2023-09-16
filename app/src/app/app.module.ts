@@ -4,7 +4,6 @@ import { HttpClientModule } from '@angular/common/http';
 import { LoginModule } from './modules/login/login.module';
 import { HistorialModule } from './modules/historial/historial.module';
 import { AppRoutingModule } from './app-routing.module';
-
 import { AppComponent } from './app.component';
 
 @NgModule({
