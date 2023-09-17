@@ -12,7 +12,7 @@ import { LoginComponent } from 'src/app/components/login/login.component';
     CommonModule, 
     FormsModule
   ], 
-  exports:[
+  exports: [
     LoginComponent
   ]
 })
