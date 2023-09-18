@@ -10,11 +10,11 @@ import { NavFooterModule } from './modules/nav-footer/nav-footer.module';
 
 import { HistorialModule } from './modules/historial/historial.module';
 import { EstadisticasModule } from './modules/estadisticas/estadisticas.module';
-
+import { DueloModule } from './modules/duelo/duelo.module';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     BrowserModule,
@@ -23,7 +23,8 @@ import { EstadisticasModule } from './modules/estadisticas/estadisticas.module';
     LoginModule, 
     NavFooterModule,
     HistorialModule, 
-    EstadisticasModule
+    EstadisticasModule, 
+    DueloModule
   ],
   providers: [],
   bootstrap: [AppComponent]
